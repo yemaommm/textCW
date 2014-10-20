@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	<bean id="logins" class="org.action.loginsAction"></bean>
+	<bean id="Lists" class="org.action.lists"></bean>
+	<bean id="d" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=CW_userbase</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select * from ZT</value>
+		</property>
+		<property name="updatesql">
+			<value>UPDATE ZT SET %s</value>
+		</property>
+		<property name="addsql">
+			<value>INSERT INTO ZT%s VALUES (%s)</value>
+		</property>
+		<property name="delsql">
+			<value>DELETE FROM ZT %s</value>
+		</property>
+	</bean>
+	<bean id="Iuse" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select * from users </value>
+		</property>
+		<property name="addsql">
+			<value>INSERT INTO users%s VALUES (%s)</value>
+		</property>
+		<property name="delsql">
+			<value>DELETE FROM users %s</value>
+		</property>
+		<property name="updatesql">
+			<value>UPDATE users SET %s</value>
+		</property>
+	</bean>
+	<bean id="yh" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select * from km </value>
+		</property>
+		<property name="addsql">
+			<value>INSERT INTO km%s VALUES (%s)</value>
+		</property>
+		<property name="updatesql">
+			<value>UPDATE km SET %s</value>
+		</property>
+		<property name="delsql">
+			<value>DELETE FROM km %s</value>
+		</property>
+	</bean>
+	<bean id="pz" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select %s from pz %s</value>
+		</property>
+		<property name="addsql">
+			<value>INSERT INTO pz (%s) VALUES (%s)</value>
+		</property>
+		<property name="updatesql">
+			<value>UPDATE pz SET %s</value>
+		</property>
+		<property name="delsql">
+			<value>DELETE FROM pz %s</value>
+		</property>
+	</bean>
+	<bean id="mxz" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select %s from pz,km where pz.BM=km.BM %s order by [year],[mouth],[PZH]</value>
+		</property>
+	</bean>
+	<bean id="jzye" class="org.spring.dbc">
+		<property name="drivermanager">
+			<value>jdbc:sqlserver://127.0.0.1:1433;DatabaseName=</value>
+		</property>
+		<property name="use">
+			<value>sa</value>
+		</property>
+		<property name="password">
+			<value></value>
+		</property>
+		<property name="sql">
+			<value>select %s from %s %s</value>
+		</property>
+		<property name="addsql">
+			<value>INSERT INTO %s %s</value>
+		</property>
+		<property name="updatesql">
+			<value>UPDATE %s SET %s</value>
+		</property>
+		<property name="delsql">
+			<value>DELETE FROM %s %s</value>
+		</property>
+	</bean>
+</beans>

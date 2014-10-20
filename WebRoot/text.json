@@ -1,0 +1,27 @@
+{  
+  id:'1',  
+  text:'treenode 1',  
+  expanded:true,  
+  children:[{  
+    id:'11',  
+    text:'treenode 11',  
+    leaf:true  
+  },{  
+    id:'12',  
+    text:'treenode 12',  
+    expanded:true,  
+    children:[{  
+      id:'121',  
+      text:'treenode 121',  
+      leaf:true  
+    },{  
+      id:'122',  
+      text:'treenode 122',  
+      leaf:true  
+    }]  
+  },{  
+    id:'13',  
+    text:'treenode 13',  
+    leaf:true  
+  }]  
+}  

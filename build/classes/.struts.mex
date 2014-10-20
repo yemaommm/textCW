@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="default" location="12,10" size="202,1221">
+    <action name="Loginss" location="31,23" size="150,62">
+      <result name="ok">
+        <resourceEdge source="ok" routing="0" target="CW.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="Listss" location="31,91" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="s.jsp" />
+      </result>
+    </action>
+    <action name="KM" location="43,132" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="s.jsp" />
+      </result>
+    </action>
+    <action name="Use" location="45,176" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="s.jsp" />
+      </result>
+    </action>
+    <action name="AddUser" location="45,222" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="DelUser" location="51,268" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="UpdataUser" location="26,309" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Updatepassword" location="26,351" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Addkm" location="27,397" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Delkm" location="31,440" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Addpz" location="31,483" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Query_pz_Count" location="29,527" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Updatapz" location="31,567" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Json_km" location="21,611" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="SH_PZ" location="17,655" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="ZF_PZ" location="25,700" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="JZ_PZ" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Detail_Account" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="Year" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="null.jsp" />
+      </result>
+    </action>
+    <action name="SSPHB" location="25,745" size="150,40" />
+  </package>
+  <webResource name="CW.jsp" path="/CW.jsp" location="218,10" size="150,55" />
+  <webResource name="s.jsp" path="/s.jsp" location="300,164" size="150,55" />
+  <webResource name="null.jsp" path="/null.jsp" location="226,475" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="388,57" size="150,55" />
+</Struts2Diagram>
+

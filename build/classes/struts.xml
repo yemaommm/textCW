@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default"
+		extends="struts-default">
+
+	<action name="Loginss" class="org.action.loginsAction">
+		<result name="ok">/CW.jsp</result>
+		<result name="error">/index.jsp</result>
+	</action>
+	<action name="Listss" class="org.action.lists">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/s.jsp</param>
+		</result>
+	</action>
+	<action name="KM" class="org.action.km">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/s.jsp</param>
+		</result>
+	</action>
+	<action name="Use" class="org.action.Use">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/s.jsp</param>
+		</result>
+	</action>
+	<action name="AddUser" class="org.action.AddUser">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="DelUser" class="org.action.DelUser">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	
+	<action name="UpdataUser" class="org.action.UpdataUser">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Updatepassword" class="org.action.Updatepassword">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Addkm" class="org.action.Addkm">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Delkm" class="org.action.Delkm">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Addpz" class="org.action.Addpz">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Query_pz_Count" class="org.action.Query_pz_Count">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Updatapz" class="org.action.Updatapz">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Json_km" class="org.action.Json_km">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="SH_PZ" class="org.action.SH_PZ">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="ZF_PZ" class="org.action.ZF_PZ">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="JZ_PZ" class="org.action.JZ_PZ">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Detail_Account" class="org.action.Detail_Account">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Year" class="org.action.Year">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="SSPHB" class="org.action.SSPHB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="PZCX" class="org.action.PZCX">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="BIAO" class="org.action.BIAO">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Updatakm" class="org.action.Updatakm">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="SYJZ" class="org.action.SYJZ">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="ZCFZB" class="org.action.ZCFZB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="SYB" class="org.action.SYB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="CW" class="org.action.CW">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="JSON_XJLL" class="org.action.JSON_XJLL">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="XJLLB" class="org.action.XJLLB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="ALL_JSON_KM" class="org.action.ALL_JSON_KM">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="Building" class="org.action.Build.Building">
+		<result name="ok">/building.jsp</result>
+		<result name="error">/build.jsp</result>
+	</action>
+	<action name="Add_DB" class="org.action.Build.Add_DB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="DEL_DB" class="org.action.Build.DEL_DB">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="YELL" class="org.action.Build.YELL">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action>
+	<action name="ADD_YELL" class="org.action.Build.ADD_YELL">
+		<result name="success" type="plainText">
+			<param name="charset">UTF-8</param>
+			<param name="location">/null.jsp</param>
+		</result>
+	</action></package>
+</struts>

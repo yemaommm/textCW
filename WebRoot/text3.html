@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+ <div id="xtd" name="xtd"></div>
+lksajdflka
+ <script>Ext.onReady(function(){
+		var tree = Ext.create("Ext.tree.Panel", {
+			                 title: "Tree示例",
+			                 width: 150,
+			                 height: 100,
+			                 renderTo:'xtd',
+			                 root: {
+		                     text: "根",
+			                     expanded: true,
+			                     children: [{
+			                         text: "叶子1",
+			                         leaf: true
+			                     }, {
+			                         text: "叶子2",
+			                         leaf: true
+			                     }]
+			                 }
+			             });
+			        
+	
+	});</script>
+
+</body>
+</html>
